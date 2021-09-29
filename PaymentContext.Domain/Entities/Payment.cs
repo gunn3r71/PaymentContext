@@ -4,15 +4,6 @@ namespace PaymentContext.Domain.Entities
 {
     public abstract class Payment
     {
-        public Payment(DateTime paidDate,
-                       DateTime expireDate,
-                       decimal total,
-                       decimal totalPaid,
-                       string payer,
-                       string document,
-                       string address)
-        {
-        }
         public string Number { get; private set; }
         public DateTime PaidDate { get; private set; }
         public DateTime ExpireDate { get; private set; }
