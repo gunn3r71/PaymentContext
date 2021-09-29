@@ -4,16 +4,10 @@ namespace PaymentContext.Domain.Entities
 {
     public class Subscription
     {
-        
-        public Subscription(DateTime createDate, DateTime lastUpdateDate, DateTime? expireDate) 
-        {
-            CreateDate = createDate;
-            LastUpdateDate = lastUpdateDate;
-            ExpireDate = expireDate;   
-        }
-
-        public DateTime CreateDate { get; private set; }
-        public DateTime LastUpdateDate { get; private set; }
-        public DateTime? ExpireDate { get; private set; }
+        public DateTime CreateDate { get; set; }
+        public DateTime LastUpdateDate { get; set; }
+        public DateTime? ExpireDate { get; set; }
+        public bool Active { get; set; }
+        public IList<Payment> Paymets { get; set; }   
     }
 }
