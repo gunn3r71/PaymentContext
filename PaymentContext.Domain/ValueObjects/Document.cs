@@ -14,6 +14,9 @@ namespace PaymentContext.Domain.ValueObjects
         {
             Number = number;
             Type = type;
+
+            if (string.IsNullOrEmpty(Number))
+                AddNotification(nameof(Number), "The field number cannot be null.");
         }
 
         public string Number { get; private set; }

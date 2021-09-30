@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "460019d4-a549-408a-bc2b-ec1d78f67735": {
+      "ProjectGuid": "460019d4-a549-408a-bc2b-ec1d78f67735",
+      "DisplayName": "PaymentContext.Domain",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
