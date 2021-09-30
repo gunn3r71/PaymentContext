@@ -103,3 +103,5 @@ C:\Users\lucas\source\repos\PaymentContext\PaymentContext.Tests\bin\Debug\net5.0
 C:\Users\lucas\source\repos\PaymentContext\PaymentContext.Tests\bin\Debug\net5.0\PaymentContext.Shared.dll
 C:\Users\lucas\source\repos\PaymentContext\PaymentContext.Tests\bin\Debug\net5.0\PaymentContext.Shared.pdb
 C:\Users\lucas\source\repos\PaymentContext\PaymentContext.Tests\bin\Debug\net5.0\PaymentContext.Domain.pdb
+C:\Users\lucas\source\repos\PaymentContext\PaymentContext.Tests\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\lucas\source\repos\PaymentContext\PaymentContext.Tests\bin\Debug\net5.0\Flunt.dll

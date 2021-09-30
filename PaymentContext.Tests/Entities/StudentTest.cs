@@ -1,29 +1,27 @@
-﻿using PaymentContext.Domain.Entities;
-using System;
+﻿using PaymentContext.Domain.ValueObjects;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace PaymentContext.Tests.Entities
 {
     public class StudentTest
     {
-        [Fact]
-        public void AdicionarAssinatura()
+        public StudentTest(ITestOutputHelper outputHelper)
         {
-            var subscription = new Subscription(expireDate: null);
-            var student = new Student(firstName: "Lucas",
-                                      lastName: "Pereira",
-                                      document: "51566495806",
-                                      email: "lucas.p.oliveira@outlook.pt");
-            student.AddSubscription(subscription);
+            _outputHelper = outputHelper;
+        }
+        
+        private readonly ITestOutputHelper _outputHelper;
 
-            var payment = new PayPalPayment(transactionCode: "2500001",
-                                            paidDate: DateTime.UtcNow.AddHours(-3),
-                                            expireDate: DateTime.UtcNow.AddMonths(3),
-                                            total: 150.00M,
-                                            totalPaid: 150.00M,
-                                            payer: "Lucas Pereira",
-                                            document: "51566495806",
-                                            address: "SP");
+        [Fact]
+        public void AddName()
+        {
+            var name = new Name("L", "L");
+
+            foreach (var notification in name.Notifications)
+            {
+                _outputHelper.WriteLine(notification.Message);
+            }
         }
     }
 }
