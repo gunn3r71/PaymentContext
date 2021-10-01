@@ -1,5 +1,4 @@
-﻿using Flunt.Notifications;
-using PaymentContext.Domain.Validations;
+﻿using PaymentContext.Domain.Validations.NameValidate;
 using PaymentContext.Shared.Validations;
 using PaymentContext.Shared.ValueObjects;
 

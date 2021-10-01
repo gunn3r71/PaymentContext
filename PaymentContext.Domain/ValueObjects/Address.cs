@@ -1,4 +1,6 @@
-﻿using PaymentContext.Shared.ValueObjects;
+﻿using PaymentContext.Domain.Validations.AddressValidate;
+using PaymentContext.Shared.Validations;
+using PaymentContext.Shared.ValueObjects;
 
 namespace PaymentContext.Domain.ValueObjects
 {
@@ -19,6 +21,9 @@ namespace PaymentContext.Domain.ValueObjects
             State = state;
             Country = country;
             ZipCode = zipCode;
+
+            var result = Validator.Validate(new AddressValidation(), this);
+            if (result.HasErrors) result.Errors.ForEach(error => AddNotification(error.PropertyName, error.ErrorMessage));
         }
 
         public string StreetName { get; private set; }

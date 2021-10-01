@@ -1,4 +1,6 @@
 ﻿using PaymentContext.Domain.Enums;
+using PaymentContext.Domain.Validations.DocumentValidate;
+using PaymentContext.Shared.Validations;
 using PaymentContext.Shared.ValueObjects;
 using System;
 using System.Collections.Generic;
@@ -15,8 +17,8 @@ namespace PaymentContext.Domain.ValueObjects
             Number = number;
             Type = type;
 
-            if (string.IsNullOrEmpty(Number))
-                AddNotification(nameof(Number), "The field number cannot be null.");
+            var result = Validator.Validate(new DocumentValidation(), this);
+            if (result.HasErrors) result.Errors.ForEach(x => AddNotification(x.PropertyName, x.ErrorMessage));
         }
 
         public string Number { get; private set; }

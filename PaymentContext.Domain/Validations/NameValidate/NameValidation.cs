@@ -2,7 +2,7 @@
 using PaymentContext.Shared.Validations;
 using FluentValidation;
 
-namespace PaymentContext.Domain.Validations
+namespace PaymentContext.Domain.Validations.NameValidate
 {
     public class NameValidation : AbstractValidator<Name>
     {
