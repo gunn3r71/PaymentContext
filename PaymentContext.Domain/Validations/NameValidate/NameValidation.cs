@@ -1,6 +1,7 @@
 ﻿using PaymentContext.Domain.ValueObjects;
 using PaymentContext.Shared.Validations;
 using FluentValidation;
+using PaymentContext.Shared.Messages;
 
 namespace PaymentContext.Domain.Validations.NameValidate
 {
@@ -10,15 +11,15 @@ namespace PaymentContext.Domain.Validations.NameValidate
         {
             RuleFor(x => x.FirstName)
                 .NotNull()
-                .WithMessage("The {PropertyName} field needs to be provided.")
+                .WithMessage(DefaultMessages.GetMessage("Required"))
                 .Length(2, 30)
-                .WithMessage("The {PropertyName} field must have length between {MinLength} and {MaxLength} characters.");
+                .WithMessage(DefaultMessages.GetMessage("MinMaxPropertyLength"));
             
             RuleFor(x => x.LastName)
                 .NotNull()
-                .WithMessage("The {PropertyName} field needs to be provided.")
+                .WithMessage(DefaultMessages.GetMessage("Required"))
                 .Length(2, 30)
-                .WithMessage("The {PropertyName} field must have length between {MinLength} and {MaxLength} characters.");
+                .WithMessage(DefaultMessages.GetMessage("MinMaxPropertyLength"));
         }
     }
 }

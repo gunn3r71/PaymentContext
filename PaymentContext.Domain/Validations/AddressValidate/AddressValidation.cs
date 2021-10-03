@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using PaymentContext.Domain.ValueObjects;
+using PaymentContext.Shared.Messages;
 
 namespace PaymentContext.Domain.Validations.AddressValidate
 {
@@ -9,39 +10,39 @@ namespace PaymentContext.Domain.Validations.AddressValidate
         {
             RuleFor(x => x.StreetName)
                 .NotNull()
-                .WithMessage("The {PropertyName} field needs to be provided.")
+                .WithMessage(DefaultMessages.GetMessage("Required"))
                 .Length(5, 150)
-                .WithMessage("The {PropertyName} field must have length between {MinLength} and {MaxLength} characters.");
+                .WithMessage(DefaultMessages.GetMessage("MinMaxPropertyLength"));
             RuleFor(x => x.Number)
                 .NotNull()
-                .WithMessage("The {PropertyName} field needs to be provided.")
+                .WithMessage(DefaultMessages.GetMessage("Required"))
                 .Length(1, 10)
-                .WithMessage("The {PropertyName} field must have length between {MinLength} and {MaxLength} characters.");
+                .WithMessage(DefaultMessages.GetMessage("MinMaxPropertyLength"));
             RuleFor(x => x.Neighborhood)
                 .NotNull()
-                .WithMessage("The {PropertyName} field needs to be provided.")
+                .WithMessage(DefaultMessages.GetMessage("Required"))
                 .Length(5, 150)
-                .WithMessage("The {PropertyName} field must have length between {MinLength} and {MaxLength} characters.");
+                .WithMessage(DefaultMessages.GetMessage("MinMaxPropertyLength"));
             RuleFor(x => x.City)
                 .NotNull()
-                .WithMessage("The {PropertyName} field needs to be provided.")
+                .WithMessage(DefaultMessages.GetMessage("Required"))
                 .Length(2, 25)
-                .WithMessage("The {PropertyName} field must have length between {MinLength} and {MaxLength} characters.");
+                .WithMessage(DefaultMessages.GetMessage("MinMaxPropertyLength"));
             RuleFor(x => x.State)
                 .NotNull()
-                .WithMessage("The {PropertyName} field needs to be provided.")
+                .WithMessage(DefaultMessages.GetMessage("Required"))
                 .Length(2, 25)
-                .WithMessage("The {PropertyName} field must have length between {MinLength} and {MaxLength} characters.");
+                .WithMessage(DefaultMessages.GetMessage("MinMaxPropertyLength"));
             RuleFor(x => x.Country)
                 .NotNull()
-                .WithMessage("The {PropertyName} field needs to be provided.")
+                .WithMessage(DefaultMessages.GetMessage("Required"))
                 .Length(2, 50)
-                .WithMessage("The {PropertyName} field must have length between {MinLength} and {MaxLength} characters.");
+                .WithMessage(DefaultMessages.GetMessage("MinMaxPropertyLength"));
             RuleFor(x => x.ZipCode)
                 .NotNull()
-                .WithMessage("The {PropertyName} field needs to be provided.")
+                .WithMessage(DefaultMessages.GetMessage("Required"))
                 .Length(5,5)
-                .WithMessage("The {PropertyName} field must have length between {MinLength} and {MaxLength} characters.");
+                .WithMessage(DefaultMessages.GetMessage("MinMaxPropertyLength"));
         }
     }
 }

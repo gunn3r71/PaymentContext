@@ -1,9 +1,12 @@
+using PaymentContext.Domain.Validations.SubscriptionValidate;
+using PaymentContext.Shared.Entities;
+using PaymentContext.Shared.Validations;
 using System;
 using System.Collections.Generic;
 
 namespace PaymentContext.Domain.Entities
 {
-    public class Subscription
+    public class Subscription : Entity
     {
         public Subscription(DateTime? expireDate)
         {
@@ -12,6 +15,9 @@ namespace PaymentContext.Domain.Entities
             ExpireDate = expireDate;
             Active = true;
             _payments = new List<Payment>();
+
+            var result = Validator.Validate(new SubscriptionValidation(), this);
+            if (result.HasErrors) result.Errors.ForEach(error => AddNotification(error.PropertyName, error.ErrorMessage));
         }
 
         public DateTime CreateDate { get; private set; }
@@ -24,6 +30,8 @@ namespace PaymentContext.Domain.Entities
 
         public void AddPayment(Payment payment)
         {
+            if (payment.PaidDate > DateTime.UtcNow.AddHours(-3)) AddNotification(nameof(payment.PaidDate), "Payment date is greater than current date.");
+
             _payments.Add(payment);
         }
 

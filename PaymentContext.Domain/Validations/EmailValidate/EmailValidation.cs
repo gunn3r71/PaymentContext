@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using PaymentContext.Domain.ValueObjects;
+using PaymentContext.Shared.Messages;
 
 namespace PaymentContext.Domain.Validations.EmailValidate
 {
@@ -9,9 +10,9 @@ namespace PaymentContext.Domain.Validations.EmailValidate
         {
             RuleFor(x => x.Address)
                 .NotNull()
-                .WithMessage("The {PropertyName} field needs to be provided.")
+                .WithMessage(DefaultMessages.GetMessage("Required"))
                 .EmailAddress()
-                .WithMessage("Invalid {PropertyName}");
+                .WithMessage(DefaultMessages.GetMessage("InvalidProperty"));
         }
     }
 }

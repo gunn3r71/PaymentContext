@@ -1,9 +1,10 @@
 using PaymentContext.Domain.ValueObjects;
+using PaymentContext.Shared.Entities;
 using System;
 
 namespace PaymentContext.Domain.Entities
 {
-    public abstract class Payment
+    public abstract class Payment : Entity
     {
         protected Payment(DateTime paidDate, 
                           DateTime expireDate,
