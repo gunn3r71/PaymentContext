@@ -28,10 +28,16 @@ namespace PaymentContext.Domain.Entities
 
         public void AddSubscription(Subscription subscription)
         {
-            //Cancela todas as assinaturas e torna essa como principal
-            foreach (var sub in Subscriptions)
-                sub.Activate();
+            var hasActiveSubscription = false;
 
+            if (_subscriptions.Any(x => x.Active))
+                hasActiveSubscription = true;
+
+            if (subscription.Payments.Count == 0)
+                AddNotification("Subscription.Payments", "This subscription has no payments.");
+
+            if (hasActiveSubscription)
+                AddNotification("Subscription", "There is already an active subscription.");
             _subscriptions.Add(subscription);
         }
     }
