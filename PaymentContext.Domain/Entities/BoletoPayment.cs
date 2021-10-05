@@ -15,7 +15,6 @@ namespace PaymentContext.Domain.Entities
                              Money totalPaid,
                              string payer,
                              Document document,
-                             EDocumentType documentType,
                              Address address)
                : base(paidDate,
                       expireDate,
@@ -23,7 +22,6 @@ namespace PaymentContext.Domain.Entities
                       totalPaid,
                       payer,
                       document,
-                      documentType,
                       address)
         {
             BarCode = barCode;

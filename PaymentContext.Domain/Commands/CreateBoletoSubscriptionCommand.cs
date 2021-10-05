@@ -14,12 +14,22 @@ namespace PaymentContext.Domain.Commands
         public Document StudentDocument { get; set; }
         public Email StudentEmail { get; set; }
 
-        public BoletoPayment Payment { get; set; }
-        public EDocumentType PayerDocumentType { get; set; }
+        public string BarCode { get; set; }
+        public Email Email { get; set; }
+        public string BoletoNumber { get; set; }
+
+        public string Number { get; set; }
+        public DateTime PaidDate { get; set; }
+        public DateTime ExpireDate { get; set; }
+        public Money Total { get; set; }
+        public Money TotalPaid { get; set; }
+        public string Payer { get; set; }
+        public Document PayerDocument { get; set; }
+        public Address PayerAddress { get; set; }
 
         public void Validate()
         {
-            AddNotifications(StudentName, StudentDocument, StudentEmail, Payment);
+            AddNotifications(StudentName, StudentDocument, StudentEmail, Email, Total, TotalPaid, PayerDocument, PayerAddress);
         }
     }
 }

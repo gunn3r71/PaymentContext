@@ -13,7 +13,6 @@ namespace PaymentContext.Domain.Entities
                           Money totalPaid,
                           string payer,
                           Document document,
-                          EDocumentType documentType,
                           Address address)
         {
             Number = Guid.NewGuid().ToString().Replace("-","").Substring(0,10).ToUpper();
@@ -23,7 +22,6 @@ namespace PaymentContext.Domain.Entities
             TotalPaid = totalPaid;
             Payer = payer;
             Document = document;
-            DocumentType = documentType;
             Address = address;
         }
 
@@ -34,7 +32,6 @@ namespace PaymentContext.Domain.Entities
         public Money TotalPaid { get; private set; }
         public string Payer { get; private set; }
         public Document Document { get; private set; }
-        public EDocumentType DocumentType { get; private set; }
         public Address Address { get; private set; }
     }
 }
