@@ -1,7 +1,5 @@
 ﻿using FluentValidation;
-using FluentValidation.Results;
 using PaymentContext.Shared.Models;
-using System.Collections.Generic;
 
 namespace PaymentContext.Shared.Validations
 {

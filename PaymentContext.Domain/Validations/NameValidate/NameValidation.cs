@@ -1,5 +1,4 @@
 ﻿using PaymentContext.Domain.ValueObjects;
-using PaymentContext.Shared.Validations;
 using FluentValidation;
 using PaymentContext.Shared.Messages;
 

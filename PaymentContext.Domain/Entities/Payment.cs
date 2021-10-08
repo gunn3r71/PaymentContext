@@ -1,4 +1,3 @@
-using PaymentContext.Domain.Enums;
 using PaymentContext.Domain.ValueObjects;
 using PaymentContext.Shared.Entities;
 using System;

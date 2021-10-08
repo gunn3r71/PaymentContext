@@ -4,7 +4,6 @@ using PaymentContext.Domain.Enums;
 using PaymentContext.Domain.ValueObjects;
 using System;
 using Xunit;
-using Xunit.Abstractions;
 
 namespace PaymentContext.Tests.Entities
 {

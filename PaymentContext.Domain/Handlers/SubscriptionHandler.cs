@@ -5,6 +5,7 @@ using PaymentContext.Domain.Repositories;
 using PaymentContext.Domain.Services;
 using PaymentContext.Shared.Commands;
 using PaymentContext.Shared.Handlers;
+using PaymentContext.Shared.Messages;
 using System;
 
 namespace PaymentContext.Domain.Handlers
@@ -29,7 +30,7 @@ namespace PaymentContext.Domain.Handlers
             if (command.Invalid)
             {
                 AddNotifications(command);
-                return new CommandResult(false, "Unable to register.");
+                return new CommandResult(false, DefaultMessages.GetMessage("RegistrationFailure"));
             }
 
             if (_studentRepository.DocumentExists(command.StudentDocument.Number))
@@ -70,7 +71,7 @@ namespace PaymentContext.Domain.Handlers
                                "Welcome to Lucas.IO",
                                "Sucessful subscription, enjoy your course.");
 
-            return new CommandResult(true, "successful subscription");
+            return new CommandResult(true, DefaultMessages.GetMessage("RegistrationSuccess"));
         }
 
         public ICommandResult Handle(CreateCreditCardSubscriptionCommand command)
@@ -79,7 +80,7 @@ namespace PaymentContext.Domain.Handlers
             if (command.Invalid)
             {
                 AddNotifications(command);
-                return new CommandResult(false, "Unable to register.");
+                return new CommandResult(false, DefaultMessages.GetMessage("RegistrationFailure"));
             }
 
             if (_studentRepository.DocumentExists(command.StudentDocument.Number))
@@ -120,7 +121,7 @@ namespace PaymentContext.Domain.Handlers
                                "Welcome to Lucas.IO",
                                "Sucessful subscription, enjoy your course.");
 
-            return new CommandResult(true, "successful subscription");
+            return new CommandResult(true, DefaultMessages.GetMessage("RegistrationSuccess"));
         }
 
         public ICommandResult Handle(CreatePayPalSubscriptionCommand command)
@@ -129,7 +130,7 @@ namespace PaymentContext.Domain.Handlers
             if (command.Invalid)
             {
                 AddNotifications(command);
-                return new CommandResult(false, "Unable to register.");
+                return new CommandResult(false, DefaultMessages.GetMessage("RegistrationFailure"));
             }
 
             if (_studentRepository.DocumentExists(command.StudentDocument.Number))
@@ -161,6 +162,12 @@ namespace PaymentContext.Domain.Handlers
 
             AddNotifications(document, email, address, student, subscription, payment);
 
+            if (Invalid)
+            {
+                return new CommandResult(false, DefaultMessages.GetMessage("RegistrationFailure"));
+
+            }
+
             _studentRepository.CreateSubscription(student);
 
             _emailService.Send(student.Name.ToString(),
@@ -168,7 +175,7 @@ namespace PaymentContext.Domain.Handlers
                                "Welcome to Lucas.IO",
                                "Sucessful subscription, enjoy your course.");
 
-            return new CommandResult(true, "successful subscription");
+            return new CommandResult(true, DefaultMessages.GetMessage("RegistrationSuccess"));
         }
     }
 }

@@ -8,7 +8,9 @@ namespace PaymentContext.Shared.Messages
             {"Required", "The {PropertyName} field needs to be provided."},
             {"MinMaxPropertyLength", "The {PropertyName} field must have length between {MinLength} and {MaxLength} characters."},
             {"MaxPropertyLength", "The {PropertyName} field must be {MaxLength} characters long."},
-            {"InvalidProperty", "Invalid {PropertyName}." }
+            {"InvalidProperty", "Invalid {PropertyName}." },
+            {"RegistrationFailure", "Unable to register." },
+            {"RegistrationSuccess", "successful subscription" }
         };
 
         public static string GetMessage(string key)
