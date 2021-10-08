@@ -15,7 +15,6 @@ namespace PaymentContext.Domain.Commands
         public Email Email { get; set; }
         public string BoletoNumber { get; set; }
 
-        public string Number { get; set; }
         public DateTime PaidDate { get; set; }
         public DateTime ExpireDate { get; set; }
         public Money Total { get; set; }

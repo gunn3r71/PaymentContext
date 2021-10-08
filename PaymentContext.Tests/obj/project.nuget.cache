@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T6JAwuHbF0Pdzhr3Yfyy0wSizOAHqS2+5Spf5Zu4CifAjZyWSbE4d2CsW0vL52FTz8aI29t2iUCTE1m9hB33Zg==",
+  "dgSpecHash": "ajsD0AaUF3NENQGIWQh3j/QxAmKNwl0s6KDN77nnM38EQiGFcrLELyKG0OukKd15KB2yBWHBfaV2XGNC/zPHlQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lucas\\Source\\Repos\\gunn3r71\\PaymentContext\\PaymentContext.Tests\\PaymentContext.Tests.csproj",
+  "projectFilePath": "C:\\Users\\lucas\\source\\repos\\gunn3r71\\PaymentContext\\PaymentContext.Tests\\PaymentContext.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas\\.nuget\\packages\\autobogus\\2.13.1\\autobogus.2.13.1.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\bogus\\31.0.3\\bogus.31.0.3.nupkg.sha512",
@@ -104,9 +104,9 @@
     "C:\\Users\\lucas\\.nuget\\packages\\xunit.extensibility.core\\2.4.1\\xunit.extensibility.core.2.4.1.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\xunit.extensibility.execution\\2.4.1\\xunit.extensibility.execution.2.4.1.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512",
-    "C:\\Users\\lucas\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\lucas\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\lucas\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\lucas\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

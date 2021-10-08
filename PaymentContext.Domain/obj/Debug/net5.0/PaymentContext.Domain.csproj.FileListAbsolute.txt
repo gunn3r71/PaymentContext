@@ -23,7 +23,7 @@ C:\Users\lucas\Source\Repos\gunn3r71\PaymentContext\PaymentContext.Domain\obj\De
 C:\Users\lucas\Source\Repos\gunn3r71\PaymentContext\PaymentContext.Domain\obj\Debug\net5.0\PaymentContext.Domain.AssemblyInfoInputs.cache
 C:\Users\lucas\Source\Repos\gunn3r71\PaymentContext\PaymentContext.Domain\obj\Debug\net5.0\PaymentContext.Domain.AssemblyInfo.cs
 C:\Users\lucas\Source\Repos\gunn3r71\PaymentContext\PaymentContext.Domain\obj\Debug\net5.0\PaymentContext.Domain.csproj.CoreCompileInputs.cache
-C:\Users\lucas\Source\Repos\gunn3r71\PaymentContext\PaymentContext.Domain\obj\Debug\net5.0\PaymentContext.Domain.csproj.CopyComplete
 C:\Users\lucas\Source\Repos\gunn3r71\PaymentContext\PaymentContext.Domain\obj\Debug\net5.0\PaymentContext.Domain.dll
 C:\Users\lucas\Source\Repos\gunn3r71\PaymentContext\PaymentContext.Domain\obj\Debug\net5.0\ref\PaymentContext.Domain.dll
 C:\Users\lucas\Source\Repos\gunn3r71\PaymentContext\PaymentContext.Domain\obj\Debug\net5.0\PaymentContext.Domain.pdb
+C:\Users\lucas\source\repos\gunn3r71\PaymentContext\PaymentContext.Domain\obj\Debug\net5.0\PaymentContext.Domain.csproj.CopyComplete

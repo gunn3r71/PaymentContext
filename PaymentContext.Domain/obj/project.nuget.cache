@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wPs9u8vG+dL5gIBIHzfZWNcqzyVa7o+qYkS+rwci20bErI3yNrhoLYLOJYt4qT5G8Zd1qtLhZ8BS/+FeTk/9AQ==",
+  "dgSpecHash": "VBgLN99OPEQ3M5FCQdlSkZAyCG0L/YhuvAqqlsbA5zuWm1yurI5KbNRC68Q++cIrTcQLdp6hvkG92kXTJGIR8A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lucas\\Source\\Repos\\gunn3r71\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj",
+  "projectFilePath": "C:\\Users\\lucas\\source\\repos\\gunn3r71\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas\\.nuget\\packages\\fluentvalidation\\10.3.3\\fluentvalidation.10.3.3.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\flunt\\1.0.2\\flunt.1.0.2.nupkg.sha512",
@@ -79,9 +79,9 @@
     "C:\\Users\\lucas\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\lucas\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\lucas\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\lucas\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\lucas\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
