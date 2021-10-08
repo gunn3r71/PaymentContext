@@ -7,7 +7,7 @@ using System;
 
 namespace PaymentContext.Domain.Commands
 {
-    internal class CreateCreditCardSubscriptionCommand : Notifiable, ICommand
+    public class CreateCreditCardSubscriptionCommand : Notifiable, ICommand
     {
         public Name StudentName { get; set; }
         public Document StudentDocument { get; set; }
