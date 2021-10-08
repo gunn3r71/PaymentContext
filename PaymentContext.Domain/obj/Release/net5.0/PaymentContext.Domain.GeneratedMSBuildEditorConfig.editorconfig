@@ -7,4 +7,8 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PaymentContext.Domain
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\lucas\Source\Repos\gunn3r71\PaymentContext\PaymentContext.Domain\
+=======
+build_property.ProjectDir = C:\Users\lucas\source\repos\gunn3r71\PaymentContext\PaymentContext.Domain\
+>>>>>>> c9f42f75f36f0a27608b88610f0e092a17f3ec65
