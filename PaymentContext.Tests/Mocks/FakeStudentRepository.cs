@@ -1,10 +1,14 @@
 ﻿using PaymentContext.Domain.Entities;
+using PaymentContext.Domain.Enums;
 using PaymentContext.Domain.Repositories;
+using PaymentContext.Domain.ValueObjects;
+using System;
+using System.Collections.Generic;
 
 namespace PaymentContext.Tests.Mocks
 {
     public class FakeStudentRepository : IStudentRepository
-    {
+    { 
         public void CreateSubscription(Student student)
         {
             throw new System.NotImplementedException();

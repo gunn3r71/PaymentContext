@@ -1,4 +1,5 @@
 ﻿using PaymentContext.Domain.Entities;
+using System.Linq;
 
 namespace PaymentContext.Domain.Repositories
 {
